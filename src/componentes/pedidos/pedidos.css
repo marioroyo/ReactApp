@@ -1,0 +1,11 @@
+.pedidos{
+    background: rgb(197, 149, 149);
+    box-shadow: 10px 10px 8px 20px #eee;
+    margin-bottom: 20px;
+    margin-left: 450px;
+    margin-right: 300px;
+}
+.pedidos button:hover,
+.predidos button:active {
+    color: #f10f0f;
+}

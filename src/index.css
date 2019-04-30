@@ -1,0 +1,61 @@
+body {
+  margin: 50;
+  padding: 0;
+  font-family: sans-serif;
+  width: 100%;
+  background-color: rgb(122, 131, 255);
+}
+
+
+.page-container {
+    width: 1000px;
+    margin: 100px auto;
+    padding: 32px; /*la pagina se hara mas grande y el body mas pequeño*/
+    background-color: rgb(193, 209, 44);
+    position: relative;
+}
+
+.product-listing {
+  margin-left: 250px;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap; /*envolvente*/
+  flex-direction: column; /*mostrar en fila*/
+}
+.product-listing .product-list-item button:hover,
+.product-listing .product-list-item button:active {
+    color: #27ec0d;
+}
+.product-listing .product-list-item img :hover,
+.product-listing .product-list-item img:active {
+  transform: scale(3); 
+}
+.product-listing .product-list-item {
+  box-shadow: 0px 0px 8px 2px #dddddd;
+  background-color: rgb(44, 198, 103);
+  padding: 10px 30px;
+  width: 400px;
+}
+
+ul.top-menu {
+  position: absolute;
+  right: 80px;
+  top: 80px;
+  margin: 20;
+}/*los enlaces a inicio y carro se colocaran
+   a 50px desde arriba y derecha respecto al
+   page container */
+
+   ul.top-menu li {
+    display: inline-block;
+  }
+  
+  ul.top-menu li:before {
+    content: '|';
+    margin: 0 4px;
+  }
+  
+  ul.top-menu li:nth-child(1):before {
+    content: '';
+    margin: 0;
+  }
